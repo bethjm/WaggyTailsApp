@@ -3,8 +3,10 @@ import Colors from "../../constants/Colors";
 
 function PrimaryButton({ children }) {
   return (
-    <View style={styles.container}>
-      <Text>{children}</Text>
+    <View style={styles.outterContainer}>
+      <View style={styles.container}>
+        <Text style={styles.content}>{children}</Text>
+      </View>
     </View>
   );
 }
@@ -12,15 +14,24 @@ function PrimaryButton({ children }) {
 export default PrimaryButton;
 
 const styles = StyleSheet.create({
+  outterContainer: {
+    borderRadius: 20,
+    overflow: "hidden",
+  },
   container: {
     backgroundColor: Colors.darkPrimary,
-    width: 100,
-    height: 30,
-    borderRadius: 20,
-    elevation: 4,
+    paddingTop: 8,
+    paddingBottom: 8,
+    paddingHorizontal: 50,
+    elevation: 9,
     shadowColor: "black",
     shadowOffset: { width: 0, height: 2 },
     shadowRadius: 6,
     shadowOpacity: 0.25,
+  },
+  content: {
+    color: "white",
+    alignItems: "center",
+    fontSize: 18,
   },
 });
