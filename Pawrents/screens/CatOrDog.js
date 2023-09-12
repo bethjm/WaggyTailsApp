@@ -1,4 +1,4 @@
-import { View, Text } from "react-native";
+import { View, Text, StyleSheet, Image } from "react-native";
 
 import AnimalButton from "../components/ui/AnimalButton";
 
@@ -23,6 +23,5 @@ export default CatOrDog;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection: row,
   },
 });

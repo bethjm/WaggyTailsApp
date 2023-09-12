@@ -1,8 +1,14 @@
-import { View, Text } from "react-native";
+import { View, Text, StyleSheet } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 
 import PrimaryButton from "../components/ui/PrimaryButton";
 
 function AppGoal() {
+  const navigation = useNavigation();
+
+  const goToScreenThree = () => {
+    navigation.navigate("OpenBook"); // Navigate to ScreenThree
+  };
   return (
     <View style={styles.container}>
       <Text style={styles.title}>The goal of this quiz is...</Text>
@@ -10,7 +16,7 @@ function AppGoal() {
         to ensure that perspective paw-rents know all the essential information
         before bringing a new furry friend home.
       </Text>
-      <PrimaryButton>Next</PrimaryButton>
+      <PrimaryButton onPress={goToScreenThree}>Next</PrimaryButton>
     </View>
   );
 }

@@ -1,10 +1,16 @@
 import { View, Text, Image } from "react-native";
 import { StyleSheet } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 
 import PrimaryButton from "../components/ui/PrimaryButton";
 import Colors from "../constants/Colors";
 
 function Welcome() {
+  const navigation = useNavigation();
+
+  const goToSecondScreen = () => {
+    navigation.navigate("AppGoal");
+  };
   return (
     <View style={styles.container}>
       <Image
@@ -12,7 +18,7 @@ function Welcome() {
         source={require("../assets/images/waggy_logo.webp")}
       />
       <Text style={styles.content}>Welcome to the WaggyTail adopter quiz</Text>
-      <PrimaryButton>Next</PrimaryButton>
+      <PrimaryButton onPress={goToSecondScreen}>Next</PrimaryButton>
     </View>
   );
 }
@@ -23,14 +29,13 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: "center",
-    paddingTop: 300,
+    paddingTop: 250,
     backgroundColor: Colors.lightPrimary,
   },
   image: {
     width: 200,
     height: 200,
     alignItems: "center",
-    paddingTop: 200,
   },
   content: {
     alignItems: "center",
@@ -38,5 +43,6 @@ const styles = StyleSheet.create({
     fontSize: 24,
     textAlign: "center",
     width: "80%",
+    fontWeight: "bold",
   },
 });

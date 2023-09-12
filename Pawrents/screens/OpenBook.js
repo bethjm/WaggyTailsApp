@@ -1,8 +1,15 @@
-import { View, Text } from "react-native";
+import { View, Text, StyleSheet } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 
 import PrimaryButton from "../components/ui/PrimaryButton";
 
 function OpenBook() {
+  const navigation = useNavigation();
+
+  const goToScreenFour = () => {
+    navigation.navigate("CatOrDog");
+  };
+
   return (
     <View style={styles.container}>
       <Text style={styles.title}>This quiz is open book.</Text>
@@ -10,7 +17,7 @@ function OpenBook() {
         You may research the answers while taking the quiz or you can challenge
         yourself to see where your knowledge is at. The quiz is not timed.
       </Text>
-      <PrimaryButton>Get Started</PrimaryButton>
+      <PrimaryButton onPress={goToScreenFour}>Get Started</PrimaryButton>
     </View>
   );
 }

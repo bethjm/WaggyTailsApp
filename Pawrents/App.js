@@ -1,16 +1,26 @@
-import { StyleSheet, Text, View } from "react-native";
-
 import Welcome from "./screens/Welcome";
+import AppGoal from "./screens/AppGoal";
+import OpenBook from "./screens/OpenBook";
+import CatOrDog from "./screens/CatOrDog";
 
-export default function App() {
-  return <Welcome />;
+import { NavigationContainer } from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
+
+const Stack = createStackNavigator();
+
+function App() {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator
+        initialRouteName="Welcome"
+        screenOptions={{ headerShown: false }}
+      >
+        <Stack.Screen name="Welcome" component={Welcome} />
+        <Stack.Screen name="AppGoal" component={AppGoal} />
+        <Stack.Screen name="OpenBook" component={OpenBook} />
+        <Stack.Screen name="CatOrDog" component={CatOrDog} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
 }
-
-// const styles = StyleSheet.create({
-//   container: {
-//     backgroundColor: "#26BCDE",
-//     flex: 1,
-//     alignItems: "center",
-//     paddingTop: 200,
-//   },
-// });
+export default App;
