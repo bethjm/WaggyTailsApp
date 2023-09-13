@@ -18,13 +18,14 @@ function CatOrDog() {
     <View style={styles.container}>
       <Text>What animal are you adopting?</Text>
       <View style={styles.buttonsContainer}>
-        <AnimalButton onPress={goToGatosQuestions}>
-          Cat
-          {/* <Image source={require("../assets/images/Cat.png")} /> */}
-        </AnimalButton>
-
-        {/* <Image source={require("../assets/images/Dog.png")} /> */}
-        <AnimalButton onPress={goToPerrosQuestions}>Dog</AnimalButton>
+        <AnimalButton
+          imageSource={require("../assets/images/CatButton.png")}
+          onPress={goToGatosQuestions}
+        />
+        <AnimalButton
+          imageSource={require("../assets/images/DogButton.png")}
+          onPress={goToPerrosQuestions}
+        />
       </View>
     </View>
   );

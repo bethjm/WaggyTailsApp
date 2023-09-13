@@ -2,7 +2,7 @@ import { View, Text, StyleSheet, Image, Pressable } from "react-native";
 
 import Colors from "../../constants/Colors";
 
-function AnimalButton({ children, onPress }) {
+function AnimalButton({ children, onPress, imageSource }) {
   return (
     <View style={styles.outterContainer}>
       <Pressable
@@ -14,7 +14,8 @@ function AnimalButton({ children, onPress }) {
         android_ripple={{ color: "#26BCDE" }}
         onPress={onPress}
       >
-        <Text style={styles.content}>{children}</Text>
+        <Image source={imageSource} style={styles.image} />
+        {/* <Text style={styles.content}>{children}</Text> */}
       </Pressable>
     </View>
   );
@@ -29,10 +30,10 @@ const styles = StyleSheet.create({
   },
   innerContainer: {
     backgroundColor: Colors.darkPrimary,
-    paddingTop: 70,
-    paddingBottom: 70,
-    paddingHorizontal: 70,
-    borderRadius: 40,
+    paddingTop: 30,
+    paddingBottom: 30,
+    paddingHorizontal: 30,
+    borderRadius: 30,
     elevation: 5,
     shadowColor: "black",
     shadowOffset: { width: 0, height: 2 },
@@ -41,10 +42,15 @@ const styles = StyleSheet.create({
   },
   content: {
     color: "white",
-    alignItems: "center",
-    fontSize: 18,
+    fontSize: 30,
+    textAlign: "center",
+    marginTop: 10,
   },
   pressed: {
     opacity: 0.75,
+  },
+  image: {
+    height: 110,
+    width: 110,
   },
 });
