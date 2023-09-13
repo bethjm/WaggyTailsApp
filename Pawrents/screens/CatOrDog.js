@@ -6,12 +6,12 @@ import AnimalButton from "../components/ui/AnimalButton";
 function CatOrDog() {
   const navigation = useNavigation();
 
-  const goToGatosQuestions = () => {
-    navigation.navigate("GatosQuestions");
+  const goToCatQuizScreen = () => {
+    navigation.navigate("CatQuizScreen");
   };
 
-  const goToPerrosQuestions = () => {
-    navigation.navigate("PerrosQuestions");
+  const goToDogQuizScreen = () => {
+    navigation.navigate("DogQuizScreen");
   };
 
   return (
@@ -20,11 +20,11 @@ function CatOrDog() {
       <View style={styles.buttonsContainer}>
         <AnimalButton
           imageSource={require("../assets/images/CatButton.png")}
-          onPress={goToGatosQuestions}
+          onPress={goToCatQuizScreen}
         />
         <AnimalButton
           imageSource={require("../assets/images/DogButton.png")}
-          onPress={goToPerrosQuestions}
+          onPress={goToDogQuizScreen}
         />
       </View>
     </View>

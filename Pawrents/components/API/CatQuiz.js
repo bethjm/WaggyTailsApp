@@ -1,6 +1,5 @@
 const catQuiz = [
   {
-    id: 1,
     questionText: "How much playtime should your cat have throughout the day?",
     options: [
       "Kittens: 30-60 minutes, Adults: 15-30 minutes, Senior: 10-15 minutes",
@@ -11,7 +10,6 @@ const catQuiz = [
       "Kittens: 30-60 minutes, Adults: 15-30 minutes, Senior: 10-15 minutes",
   },
   {
-    id: 2,
     questionText: "How many litter boxes should you have in your home?",
     options: [
       "One for every cat",
@@ -21,7 +19,6 @@ const catQuiz = [
     correctAnswer: "One for every cat, plus one",
   },
   {
-    id: 3,
     questionText: `What should you do if your cat is scratching an area they should not be?`,
     options: [
       "Find an alternate toy for them to play with to distract them",
@@ -32,7 +29,6 @@ const catQuiz = [
       "Purchase a scratcher in that direction and place it near the object they are scratching",
   },
   {
-    id: 4,
     questionText: `What are the proper steps for introducing a resident cat to a new cat?`,
     options: [
       "Keep them in separate spaces, let them sniff and play under the door. Introduce them between a gate, let them eat with each other. Give them short supervised meetings and monitor body language. When they are getting along you can let them share the same spaces",
@@ -43,7 +39,6 @@ const catQuiz = [
       "Keep them in separate spaces, let them sniff and play under the door. Introduce them between a gate, let them eat with each other. Give them short supervised meetings and monitor body language. When they are getting along you can let them share the same spaces.",
   },
   {
-    id: 5,
     questionText: "What does it mean to cat-ify your home?",
     options: [
       "Hide all cords, put stoppers in all the electrical outlets, put up gates for the rooms, make sure there are screens in the windows, put latches on cabinet doors.",
@@ -54,7 +49,6 @@ const catQuiz = [
       "Have many scratching posts. Provide vertical spaces for the cats to climb like cat walls or cat trees. Give them cozy places to hide like cat beds or caves. Buy them interactive toys that they can play with and without you.",
   },
   {
-    id: 6,
     questionText: "How often should you take your adult cat to the vet?",
     options: [
       "Only when they are showing signs of sickness or injury.",
@@ -65,7 +59,6 @@ const catQuiz = [
       "On average once per year to update vaccinations and for preventative care.",
   },
   {
-    id: 7,
     questionText: "How much water should your cat drink per day?",
     options: [
       "Cats do not like water",
@@ -75,13 +68,11 @@ const catQuiz = [
     correctAnswer: "4 ounces per 5 pounds of body weight.",
   },
   {
-    id: 8,
     questionText: "How often should you clip your cat's nails?",
     options: ["Once a month", "Once a month", "Every 2-3 weeks"],
     correctAnswer: "Every 2-3 weeks",
   },
   {
-    id: 9,
     questionText: "How often should you brush your cat?",
     options: [
       "Short haired, once a week. Medium haired, 2-3 times a week. Long haired, daily.",
@@ -92,7 +83,6 @@ const catQuiz = [
       "Short haired, once a week. Medium haired, 2-3 times a week. Long haired, daily.",
   },
   {
-    id: 10,
     questionText: "How long can a cat be left alone at home?",
     options: [
       "Kittens, 12 hours. Adults cats, 1 day",
@@ -102,7 +92,6 @@ const catQuiz = [
     correctAnswer: "Kittens, 4 hours. Adult cats, 8-12 hours",
   },
   {
-    id: 11,
     questionText: "What are the signs that your cat is feeling stressed?",
     options: [
       "Fussiness, change in sleeping patterns, excessive startle reflex, tense rigid bodies.",
@@ -113,7 +102,6 @@ const catQuiz = [
       "Changes in vocalization, loss of appetite, litter box problems, aggressive behavior, decreased interaction, excessive grooming, pacing",
   },
   {
-    id: 12,
     questionText: "How much should your cat weigh?",
     options: [
       "Female, 6-12 lbs. Male, 11-15 lbs",
@@ -123,7 +111,6 @@ const catQuiz = [
     correctAnswer: "Female, 6-12 lbs. Male, 11-15 lbs",
   },
   {
-    id: 13,
     questionText: "What common houseplants are toxic to cats?",
     options: [
       "Sunflowers, Marigold, Spider Plant, Money Plant, ZZ Plant",
@@ -134,7 +121,6 @@ const catQuiz = [
       "Lilies, Snake Plants, Pothos, Aloe, Rubber Plant, Dracaena, Eucalyptus",
   },
   {
-    id: 14,
     questionText:
       "What are the appropriate steps for introducing a cat to a new home?",
     options: [
@@ -145,7 +131,6 @@ const catQuiz = [
       "Set up a secure room for them with litter, food and water for them to stay in until they are more comfortable, spend time with them in the room, let them explore the rest of the house under supervision, then let them free. Each phase should last a few days to a week.",
   },
   {
-    id: 15,
     questionText: "What should you do if you need to rehome your cat?",
     options: [
       "Contact WaggyTail rescue",
@@ -155,7 +140,6 @@ const catQuiz = [
     correctAnswer: "Contact WaggyTail rescue",
   },
   {
-    id: 16,
     questionText:
       "What should you do if your cat is peeing outside the litter box?",
     options: [
@@ -167,7 +151,6 @@ const catQuiz = [
       "Make sure the litter box is kept clean, then try a new litter placement, then try a new litter/box, make sure the cat is not stressed, and consult your vet",
   },
   {
-    id: 17,
     questionText:
       "Who is a great online resource to learn about keeping your cat happy?",
     options: [
@@ -180,3 +163,5 @@ const catQuiz = [
       "Jackson Galaxy, The Kitten Lady, and Mieshelle Nagelschneider",
   },
 ];
+
+export default catQuiz;
