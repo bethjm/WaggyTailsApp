@@ -2,6 +2,8 @@ import Welcome from "./screens/Welcome";
 import AppGoal from "./screens/AppGoal";
 import OpenBook from "./screens/OpenBook";
 import CatOrDog from "./screens/CatOrDog";
+import GatosQuestions from "./screens/GatosQuestions";
+import PerrosQuestions from "./screens/PerrosQuestions";
 
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
@@ -19,6 +21,8 @@ function App() {
         <Stack.Screen name="AppGoal" component={AppGoal} />
         <Stack.Screen name="OpenBook" component={OpenBook} />
         <Stack.Screen name="CatOrDog" component={CatOrDog} />
+        <Stack.Screen name="GatosQuestions" component={GatosQuestions} />
+        <Stack.Screen name="PerrosQuestions" component={PerrosQuestions} />
       </Stack.Navigator>
     </NavigationContainer>
   );

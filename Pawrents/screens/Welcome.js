@@ -11,6 +11,7 @@ function Welcome() {
   const goToSecondScreen = () => {
     navigation.navigate("AppGoal");
   };
+
   return (
     <View style={styles.container}>
       <Image

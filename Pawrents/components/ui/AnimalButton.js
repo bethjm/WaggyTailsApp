@@ -1,11 +1,21 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, Image, Pressable } from "react-native";
 
 import Colors from "../../constants/Colors";
 
-function AnimalButton({ children }) {
+function AnimalButton({ children, onPress }) {
   return (
-    <View style={styles.container}>
-      <Text>{children}</Text>
+    <View style={styles.outterContainer}>
+      <Pressable
+        style={({ pressed }) =>
+          pressed
+            ? [styles.innerContainer, styles.pressed]
+            : styles.innerContainer
+        }
+        android_ripple={{ color: "#26BCDE" }}
+        onPress={onPress}
+      >
+        <Text style={styles.content}>{children}</Text>
+      </Pressable>
     </View>
   );
 }
@@ -13,15 +23,28 @@ function AnimalButton({ children }) {
 export default AnimalButton;
 
 const styles = StyleSheet.create({
-  container: {
+  outterContainer: {
+    borderRadius: 20,
+    overflow: "hidden",
+  },
+  innerContainer: {
     backgroundColor: Colors.darkPrimary,
-    width: 200,
-    height: 200,
+    paddingTop: 70,
+    paddingBottom: 70,
+    paddingHorizontal: 70,
     borderRadius: 40,
-    elevation: 4,
+    elevation: 5,
     shadowColor: "black",
     shadowOffset: { width: 0, height: 2 },
     shadowRadius: 6,
-    shadowOpacity: 0.25,
+    shadowOpacity: 0.5,
+  },
+  content: {
+    color: "white",
+    alignItems: "center",
+    fontSize: 18,
+  },
+  pressed: {
+    opacity: 0.75,
   },
 });
