@@ -7,10 +7,17 @@ import DogQuizScreen from "./screens/DogQuizScreen";
 
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
+import { useState } from "react";
 
 const Stack = createStackNavigator();
 
 function App() {
+  const [selectedAnswers, setSelectedAnswers] = useState([]);
+
+  const updateSelectedAnswers = (selectedAnswer) => {
+    setSelectedAnswers([...selectedAnswers, selectedAnswer]);
+  };
+
   return (
     <NavigationContainer>
       <Stack.Navigator

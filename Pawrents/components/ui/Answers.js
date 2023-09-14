@@ -1,8 +1,13 @@
 import { Pressable, Text, StyleSheet } from "react-native";
 
 const Answers = ({ answerText, onPress }) => {
+  const handleAnswerSelect = () => {
+    // Call the onPress function when an answer is selected
+    onPress(answerText);
+  };
+
   return (
-    <Pressable style={styles.answerContainer} onPress={onPress}>
+    <Pressable style={styles.answerContainer} onPress={handleAnswerSelect}>
       <Text style={styles.answerText}>{answerText}</Text>
     </Pressable>
   );
