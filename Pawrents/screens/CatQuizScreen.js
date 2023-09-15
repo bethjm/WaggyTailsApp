@@ -17,10 +17,13 @@ const CatQuizScreen = ({ navigation }) => {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
     } else {
       // Finish the quiz
-      console.log("Quiz finished");
+      goToSeeResults();
     }
   };
 
+  const goToSeeResults = () => {
+    navigation.navigate("SeeResults"); // Navigate to the results screen
+  };
   return (
     <ImageBackground
       style={styles.container}

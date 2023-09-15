@@ -4,6 +4,8 @@ import OpenBook from "./screens/OpenBook";
 import CatOrDog from "./screens/CatOrDog";
 import CatQuizScreen from "./screens/CatQuizScreen";
 import DogQuizScreen from "./screens/DogQuizScreen";
+import SeeResults from "./screens/SeeResults";
+import ResultsPage from "./screens/ResultsPage";
 
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
@@ -32,6 +34,8 @@ function App() {
           <Stack.Screen name="CatOrDog" component={CatOrDog} />
           <Stack.Screen name="CatQuizScreen" component={CatQuizScreen} />
           <Stack.Screen name="DogQuizScreen" component={DogQuizScreen} />
+          <Stack.Screen name="SeeResults" component={SeeResults} />
+          <Stack.Screen name="ResultsPage" component={ResultsPage} />
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaView>

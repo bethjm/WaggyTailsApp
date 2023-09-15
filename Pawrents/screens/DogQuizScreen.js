@@ -2,7 +2,6 @@ import Colors from "../constants/Colors";
 import PrimaryButton from "../components/ui/PrimaryButton";
 
 import { StyleSheet, View, Text } from "react-native";
-
 import { useNavigation } from "@react-navigation/native";
 
 function DogQuizScreen() {
@@ -14,7 +13,7 @@ function DogQuizScreen() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>No Dog Questions. Sorry.</Text>
+      <Text style={styles.title}>Dog questions have not been created yet.</Text>
       <PrimaryButton style={styles.button} onPress={goToScreenWelcome}>
         Back to begining
       </PrimaryButton>
