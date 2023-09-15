@@ -14,7 +14,7 @@ function DogQuizScreen() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>No Dog Questions, yet</Text>
+      <Text style={styles.title}>No Dog Questions. Sorry.</Text>
       <PrimaryButton style={styles.button} onPress={goToScreenWelcome}>
         Back to begining
       </PrimaryButton>
