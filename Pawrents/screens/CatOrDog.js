@@ -2,6 +2,7 @@ import { View, Text, StyleSheet, Image } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 
 import AnimalButton from "../components/ui/AnimalButton";
+import Colors from "../constants/Colors";
 
 function CatOrDog() {
   const navigation = useNavigation();
@@ -16,7 +17,7 @@ function CatOrDog() {
 
   return (
     <View style={styles.container}>
-      <Text>What animal are you adopting?</Text>
+      <Text style={styles.title}>What animal are you adopting?</Text>
       <View style={styles.buttonsContainer}>
         <AnimalButton
           imageSource={require("../assets/images/CatButton.png")}
@@ -36,10 +37,19 @@ export default CatOrDog;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    paddingTop: 250,
+    backgroundColor: Colors.lightPrimary,
+  },
+  title: {
+    alignItems: "center",
+    textAlign: "center",
+    fontSize: 30,
+    fontWeight: "bold",
   },
   buttonsContainer: {
     flexDirection: "row",
     justifyContent: "space-around",
     marginHorizontal: 10,
+    marginTop: 30,
   },
 });
