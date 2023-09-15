@@ -6,6 +6,7 @@ import CatQuizScreen from "./screens/CatQuizScreen";
 import DogQuizScreen from "./screens/DogQuizScreen";
 import SeeResults from "./screens/SeeResults";
 import ResultsPage from "./screens/ResultsPage";
+import WrongAnswers from "./screens/WrongAnswers";
 
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
@@ -36,6 +37,7 @@ function App() {
           <Stack.Screen name="DogQuizScreen" component={DogQuizScreen} />
           <Stack.Screen name="SeeResults" component={SeeResults} />
           <Stack.Screen name="ResultsPage" component={ResultsPage} />
+          <Stack.Screen name="WrongAnswers" component={WrongAnswers} />
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaView>

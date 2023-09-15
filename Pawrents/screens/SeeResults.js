@@ -3,11 +3,13 @@ import { useNavigation } from "@react-navigation/native";
 
 import PrimaryButton from "../components/ui/PrimaryButton";
 
-const SeeResults = () => {
+const SeeResults = ({ route }) => {
   const navigation = useNavigation();
 
+  const { quizResults } = route.params;
+
   const goToResultsPage = () => {
-    navigation.navigate("ResultsPage");
+    navigation.navigate("ResultsPage", { quizResults });
   };
 
   return (
