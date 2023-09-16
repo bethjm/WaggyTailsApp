@@ -18,9 +18,9 @@ function WrongAnswers() {
     <View>
       <Text>Wrong answers</Text>
       <View>
-        {wrongAnswer.map((answer) => {
-          <Text>{answer}</Text>;
-        })}
+        {wrongAnswer.map((answer) => (
+          <Text key={answer}>{answer}</Text>
+        ))}
       </View>
 
       <PrimaryButton onPress={backToResults}>
