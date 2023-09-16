@@ -7,17 +7,12 @@ function ResultsPage() {
   const navigation = useNavigation();
   const route = useRoute();
 
-  const { quizResults, wrongAnswer, correctAnswerScore } = route.params;
-
-  console.log("WRONG ANSWER", wrongAnswer[0]);
-  console.log("correct", correctAnswerScore);
+  const { wrongAnswer, correctAnswerScore } = route.params;
 
   //write code and create a button to bring you to a page that sows you the answers you got wrong
   const seeWrongAnswers = ({}) => {
     navigation.navigate("WrongAnswers", { wrongAnswer });
   };
-
-  // console.log(quizResults);
 
   //write code to calcuate the score
   //map through the object of responses
@@ -30,11 +25,11 @@ function ResultsPage() {
   return (
     <View>
       <Text>you got {correctAnswerScore}/17 correct</Text>
-      {/* {wrongAnswer.length > 0 ? (
+      {wrongAnswer.length > 0 ? (
         <PrimaryButton onPress={seeWrongAnswers}>
           See incorrect answers
         </PrimaryButton>
-      ) : null} */}
+      ) : null}
     </View>
   );
 }

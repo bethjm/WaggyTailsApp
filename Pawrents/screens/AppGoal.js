@@ -10,6 +10,7 @@ function AppGoal() {
   const goToScreenThree = () => {
     navigation.navigate("OpenBook"); // Navigate to ScreenThree
   };
+
   return (
     <View style={styles.container}>
       <Text style={styles.title}>THE GOAL OF THIS QUIZ</Text>

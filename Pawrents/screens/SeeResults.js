@@ -6,8 +6,7 @@ import PrimaryButton from "../components/ui/PrimaryButton";
 const SeeResults = ({ route }) => {
   const navigation = useNavigation();
 
-  const { quizResults, selectedAnswers, wrongAnswer, correctAnswerScore } =
-    route.params;
+  const { selectedAnswers, wrongAnswer, correctAnswerScore } = route.params;
 
   const goToResultsPage = () => {
     navigation.navigate("ResultsPage", {
@@ -16,8 +15,6 @@ const SeeResults = ({ route }) => {
       correctAnswerScore: correctAnswerScore,
     });
   };
-
-  console.log("wrong answer from see results", wrongAnswer);
 
   return (
     <ImageBackground

@@ -20,10 +20,13 @@ const CatQuizScreen = ({ navigation }) => {
       correctAnswer: correctAnswer,
     };
 
+    // console.log("current question", result.question);
+
     setSelectedAnswers([...selectedAnswers, result]);
 
     if (selectedAnswer !== correctAnswer) {
-      wrongAnswer.pop(currentQuestion.questionText);
+      wrongAnswer.push(result.question);
+      console.log("wrong answer from catquizscreen", wrongAnswer);
     } else if (selectedAnswer === correctAnswer) {
       setCorrectAnswerScore(correctAnswerScore + 1);
     }
@@ -35,13 +38,11 @@ const CatQuizScreen = ({ navigation }) => {
     }
   };
 
-  useEffect(() => {
-    if (currentQuestionIndex >= CatQuiz.length) {
-      //     if (currentQuestionIndex >= CatQuiz.length - 1) {
-
-      goToSeeResults();
-    }
-  }, [currentQuestionIndex]);
+  // useEffect(() => {
+  //   if (currentQuestionIndex >= CatQuiz.length) {
+  //     goToSeeResults();
+  //   }
+  // }, [currentQuestionIndex]);
 
   const goToSeeResults = () => {
     navigation.navigate("SeeResults", {
@@ -50,8 +51,6 @@ const CatQuizScreen = ({ navigation }) => {
       correctAnswerScore: correctAnswerScore,
     });
   };
-
-  console.log("wrong answer from catquizscreen", wrongAnswer[1]);
 
   return (
     <ImageBackground
