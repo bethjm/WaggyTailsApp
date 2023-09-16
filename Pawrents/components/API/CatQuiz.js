@@ -30,16 +30,16 @@ const catQuiz = [
     ],
     correctAnswer: "One for every cat, plus one",
   },
-  {
-    questionText: `What should you do if your cat is scratching an area they should not be?`,
-    options: [
-      "Find an alternate toy for them to play with to distract them",
-      "Spray them with a spray bottle",
-      "Place a scratcher near the object they were scratching in the direction that they were scratching the object",
-    ],
-    correctAnswer:
-      "Place a scratcher near the object they were scratching in the direction that they were scratching the object",
-  },
+  // {
+  //   questionText: `What should you do if your cat is scratching an area they should not be?`,
+  //   options: [
+  //     "Find an alternate toy for them to play with to distract them",
+  //     "Spray them with a spray bottle",
+  //     "Place a scratcher near the object they were scratching in the direction that they were scratching the object",
+  //   ],
+  //   correctAnswer:
+  //     "Place a scratcher near the object they were scratching in the direction that they were scratching the object",
+  // },
   // {
   //   questionText: `What are the proper steps for introducing a resident cat to a new cat?`,
   //   options: [

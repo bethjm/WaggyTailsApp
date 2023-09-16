@@ -16,7 +16,6 @@ function WrongAnswers() {
     });
   };
 
-  console.log("wrongAnswer from wrong answers page", wrongAnswer);
   return (
     <View>
       <Text>Wrong answers</Text>

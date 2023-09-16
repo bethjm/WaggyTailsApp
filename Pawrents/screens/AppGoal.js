@@ -8,7 +8,7 @@ function AppGoal() {
   const navigation = useNavigation();
 
   const goToScreenThree = () => {
-    navigation.navigate("OpenBook"); // Navigate to ScreenThree
+    navigation.navigate("OpenBook");
   };
 
   return (

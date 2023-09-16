@@ -16,12 +16,6 @@ import { SafeAreaView, StyleSheet } from "react-native";
 const Stack = createStackNavigator();
 
 function App() {
-  const [selectedAnswers, setSelectedAnswers] = useState([]);
-
-  const updateSelectedAnswers = (selectedAnswer) => {
-    setSelectedAnswers([...selectedAnswers, selectedAnswer]);
-  };
-
   return (
     <SafeAreaView style={styles.container}>
       <NavigationContainer>
