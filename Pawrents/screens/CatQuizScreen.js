@@ -8,7 +8,7 @@ const CatQuizScreen = ({ navigation }) => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswers, setSelectedAnswers] = useState([]);
   const [correctAnswerScore, setCorrectAnswerScore] = useState(0);
-  let wrongAnswer = [];
+  const [wrongAnswer, setWrongAnswer] = useState([]);
 
   const handleNextQuestion = (selectedAnswer) => {
     const currentQuestion = CatQuiz[currentQuestionIndex];
@@ -36,7 +36,9 @@ const CatQuizScreen = ({ navigation }) => {
   };
 
   useEffect(() => {
-    if (currentQuestionIndex >= CatQuiz.length - 1) {
+    if (currentQuestionIndex >= CatQuiz.length) {
+      //     if (currentQuestionIndex >= CatQuiz.length - 1) {
+
       goToSeeResults();
     }
   }, [currentQuestionIndex]);
@@ -48,6 +50,8 @@ const CatQuizScreen = ({ navigation }) => {
       correctAnswerScore: correctAnswerScore,
     });
   };
+
+  console.log("wrong answer from catquizscreen", wrongAnswer[1]);
 
   return (
     <ImageBackground

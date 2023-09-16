@@ -9,7 +9,7 @@ function ResultsPage() {
 
   const { quizResults, wrongAnswer, correctAnswerScore } = route.params;
 
-  console.log("WRONG ANSWER", wrongAnswer);
+  console.log("WRONG ANSWER", wrongAnswer[0]);
   console.log("correct", correctAnswerScore);
 
   //write code and create a button to bring you to a page that sows you the answers you got wrong

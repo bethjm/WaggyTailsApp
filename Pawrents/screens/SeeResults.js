@@ -17,6 +17,8 @@ const SeeResults = ({ route }) => {
     });
   };
 
+  console.log("wrong answer from see results", wrongAnswer);
+
   return (
     <ImageBackground
       source={require("../assets/images/End_Screen.png")}
