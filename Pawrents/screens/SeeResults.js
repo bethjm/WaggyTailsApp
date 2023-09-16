@@ -2,6 +2,7 @@ import { View, Text, StyleSheet, ImageBackground } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 
 import PrimaryButton from "../components/ui/PrimaryButton";
+import Colors from "../constants/Colors";
 
 const SeeResults = ({ route }) => {
   const navigation = useNavigation();
@@ -22,6 +23,7 @@ const SeeResults = ({ route }) => {
       style={styles.container}
     >
       <View>
+        <Text style={styles.title}>Congrats! You've finished the quiz!</Text>
         <PrimaryButton onPress={goToResultsPage}>
           See your results
         </PrimaryButton>
@@ -35,7 +37,15 @@ export default SeeResults;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
     alignItems: "center",
+    paddingTop: 250,
+    backgroundColor: Colors.lightPrimary,
+    paddingHorizontal: 50,
+  },
+  title: {
+    textAlign: "center",
+    fontSize: 30,
+    fontWeight: "bold",
+    paddingBottom: 50,
   },
 });
