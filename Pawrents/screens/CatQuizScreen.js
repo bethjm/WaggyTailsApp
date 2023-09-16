@@ -8,7 +8,7 @@ const CatQuizScreen = ({ navigation }) => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswers, setSelectedAnswers] = useState([]);
   const [correctAnswerScore, setCorrectAnswerScore] = useState(0);
-  let wrongAnswer;
+  let wrongAnswer = [];
 
   const handleNextQuestion = (selectedAnswer) => {
     const currentQuestion = CatQuiz[currentQuestionIndex];
@@ -23,12 +23,7 @@ const CatQuizScreen = ({ navigation }) => {
     setSelectedAnswers([...selectedAnswers, result]);
 
     if (selectedAnswer !== correctAnswer) {
-      wrongAnswer = result; // Assign the value
-      navigation.navigate("ResultsPage", {
-        quizResults: selectedAnswers,
-        wrongAnswer: wrongAnswer,
-        correctAnswerScore: correctAnswerScore,
-      });
+      wrongAnswer.pop(currentQuestion.questionText);
     } else if (selectedAnswer === correctAnswer) {
       setCorrectAnswerScore(correctAnswerScore + 1);
     }
@@ -49,6 +44,7 @@ const CatQuizScreen = ({ navigation }) => {
   const goToSeeResults = () => {
     navigation.navigate("SeeResults", {
       quizResults: selectedAnswers,
+      wrongAnswer: wrongAnswer,
       correctAnswerScore: correctAnswerScore,
     });
   };

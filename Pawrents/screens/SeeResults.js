@@ -6,10 +6,15 @@ import PrimaryButton from "../components/ui/PrimaryButton";
 const SeeResults = ({ route }) => {
   const navigation = useNavigation();
 
-  const { quizResults } = route.params;
+  const { quizResults, selectedAnswers, wrongAnswer, correctAnswerScore } =
+    route.params;
 
   const goToResultsPage = () => {
-    navigation.navigate("ResultsPage", { quizResults });
+    navigation.navigate("ResultsPage", {
+      quizResults: selectedAnswers,
+      wrongAnswer: wrongAnswer,
+      correctAnswerScore: correctAnswerScore,
+    });
   };
 
   return (
