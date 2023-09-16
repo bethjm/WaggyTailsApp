@@ -7,10 +7,13 @@ function WrongAnswers() {
   const navigation = useNavigation();
   const route = useRoute();
 
-  const { wrongAnswer } = route.params;
+  const { wrongAnswer, correctAnswerScore } = route.params;
 
   const backToResults = () => {
-    navigation.navigate("ResultsPage");
+    navigation.navigate("ResultsPage", {
+      correctAnswerScore: correctAnswerScore,
+      wrongAnswer: wrongAnswer,
+    });
   };
 
   console.log("wrongAnswer from wrong answers page", wrongAnswer);

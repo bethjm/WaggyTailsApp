@@ -9,18 +9,9 @@ function ResultsPage() {
 
   const { wrongAnswer, correctAnswerScore } = route.params;
 
-  //write code and create a button to bring you to a page that sows you the answers you got wrong
   const seeWrongAnswers = ({}) => {
-    navigation.navigate("WrongAnswers", { wrongAnswer });
+    navigation.navigate("WrongAnswers", { wrongAnswer, correctAnswerScore });
   };
-
-  //write code to calcuate the score
-  //map through the object of responses
-  //for each questions compare the user answer to the correct answer
-  //if correct, add a point to the result
-  //else if incorrect, add the question to the "wrong answers" page
-
-  //write code to show incorrect answers button only IF there are incorrect answers
 
   return (
     <View>
