@@ -10,6 +10,8 @@ const CatQuizScreen = ({ navigation }) => {
   const [correctAnswerScore, setCorrectAnswerScore] = useState(0);
   const [wrongAnswer, setWrongAnswer] = useState([]);
 
+  // need to figure out why the most recently pressed question doens tget added to selectedAnswers array
+
   const handleNextQuestion = (selectedAnswer) => {
     const currentQuestion = CatQuiz[currentQuestionIndex];
     const correctAnswer = currentQuestion.correctAnswer;
@@ -33,8 +35,6 @@ const CatQuizScreen = ({ navigation }) => {
     } else {
       goToSeeResults();
     }
-
-    // console.log(selectedAnswers, wrongAnswer, correctAnswerScore);
   };
 
   const goToSeeResults = () => {

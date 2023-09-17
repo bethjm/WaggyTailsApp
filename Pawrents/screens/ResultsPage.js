@@ -36,7 +36,9 @@ function ResultsPage() {
           </PrimaryButton>
           <PrimaryButton onPress={retakeQuiz}>Retake quiz</PrimaryButton>
         </View>
-      ) : null}
+      ) : (
+        <PrimaryButton onPress={retakeQuiz}>Retake quiz</PrimaryButton>
+      )}
     </View>
   );
 }
