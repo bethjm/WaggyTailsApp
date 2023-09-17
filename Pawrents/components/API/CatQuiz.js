@@ -11,25 +11,25 @@ const catQuiz = [
     correctAnswer:
       "Jackson Galaxy, The Kitten Lady, and Mieshelle Nagelschneider",
   },
-  // {
-  //   questionText: "How much playtime should your cat have throughout the day?",
-  //   options: [
-  //     "Kittens: 30-60 minutes, Adults: 15-30 minutes, Senior: 10-15 minutes",
-  //     "Kittens: 60-120 minutes, Adults: 30-60 minutes, Senior: 20-30 minutes",
-  //     "Kittens: 15 minutes, Adults: 10 minutes, Senior: 5 minutes",
-  //   ],
-  //   correctAnswer:
-  //     "Kittens: 30-60 minutes, Adults: 15-30 minutes, Senior: 10-15 minutes",
-  // },
-  // {
-  //   questionText: "How many litter boxes should you have in your home?",
-  //   options: [
-  //     "One for every cat",
-  //     "One for every cat, plus one",
-  //     "One for each floor",
-  //   ],
-  //   correctAnswer: "One for every cat, plus one",
-  // },
+  {
+    questionText: "How much playtime should your cat have throughout the day?",
+    options: [
+      "Kittens: 30-60 minutes, Adults: 15-30 minutes, Senior: 10-15 minutes",
+      "Kittens: 60-120 minutes, Adults: 30-60 minutes, Senior: 20-30 minutes",
+      "Kittens: 15 minutes, Adults: 10 minutes, Senior: 5 minutes",
+    ],
+    correctAnswer:
+      "Kittens: 30-60 minutes, Adults: 15-30 minutes, Senior: 10-15 minutes",
+  },
+  {
+    questionText: "How many litter boxes should you have in your home?",
+    options: [
+      "One for every cat",
+      "One for every cat, plus one",
+      "One for each floor",
+    ],
+    correctAnswer: "One for every cat, plus one",
+  },
   // {
   //   questionText: `What should you do if your cat is scratching an area they should not be?`,
   //   options: [

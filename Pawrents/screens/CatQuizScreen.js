@@ -28,7 +28,12 @@ const CatQuizScreen = ({ navigation }) => {
       correctAnswer: correctAnswer,
     };
 
-    setSelectedAnswers([...selectedAnswers, result]);
+    setSelectedAnswers((prevSelectedAnswers) => [
+      ...prevSelectedAnswers,
+      result,
+    ]);
+
+    // setSelectedAnswers([...selectedAnswers, result]);
 
     if (selectedAnswer !== correctAnswer) {
       wrongAnswer.push(result.question);
@@ -39,8 +44,10 @@ const CatQuizScreen = ({ navigation }) => {
     if (currentQuestionIndex < CatQuiz.length - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
     } else {
-      goToSeeResults();
+      goToSeeResults(selectedAnswers);
     }
+
+    console.log("selected answers", selectedAnswers);
   };
 
   const goToSeeResults = () => {
