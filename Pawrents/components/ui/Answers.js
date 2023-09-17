@@ -20,11 +20,11 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     marginVertical: 20,
     marginHorizontal: 20,
-    paddingVertical: 30,
+    paddingVertical: 20,
     paddingHorizontal: 20,
   },
   answerText: {
-    fontSize: 20,
+    fontSize: 15,
     fontWeight: "bold",
     textAlign: "auto",
   },

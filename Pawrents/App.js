@@ -11,13 +11,14 @@ import WrongAnswers from "./screens/WrongAnswers";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { useState } from "react";
-import { SafeAreaView, StyleSheet } from "react-native";
+import { SafeAreaView, StyleSheet, View } from "react-native";
 
 const Stack = createStackNavigator();
 
 function App() {
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
+      {/* <SafeAreaView style={styles.container}> */}
       <NavigationContainer>
         <Stack.Navigator
           initialRouteName="Welcome"
@@ -34,7 +35,8 @@ function App() {
           <Stack.Screen name="WrongAnswers" component={WrongAnswers} />
         </Stack.Navigator>
       </NavigationContainer>
-    </SafeAreaView>
+      {/* </SafeAreaView> */}
+    </View>
   );
 }
 export default App;

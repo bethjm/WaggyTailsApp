@@ -1,7 +1,7 @@
 const catQuiz = [
   {
     questionText:
-      "Who is a great online resource to learn about keeping your cat happy?",
+      "Who is a great online resource to learn from about keeping your cat happy?",
     options: [
       "Jackson Galaxy",
       "The Kitten Lady",
@@ -16,7 +16,7 @@ const catQuiz = [
   //   options: [
   //     "Kittens: 30-60 minutes, Adults: 15-30 minutes, Senior: 10-15 minutes",
   //     "Kittens: 60-120 minutes, Adults: 30-60 minutes, Senior: 20-30 minutes",
-  //     "Kittens: 60-120 minutes, Adults: 30-60 minutes, Senior: 20-30 minutes",
+  //     "Kittens: 15 minutes, Adults: 10 minutes, Senior: 5 minutes",
   //   ],
   //   correctAnswer:
   //     "Kittens: 30-60 minutes, Adults: 15-30 minutes, Senior: 10-15 minutes",
