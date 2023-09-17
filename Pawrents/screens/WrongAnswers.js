@@ -2,6 +2,7 @@ import { View, Text, StyleSheet } from "react-native";
 import { useNavigation, useRoute } from "@react-navigation/native";
 
 import PrimaryButton from "../components/ui/PrimaryButton";
+import Colors from "../constants/Colors";
 
 function WrongAnswers() {
   const navigation = useNavigation();
@@ -53,6 +54,8 @@ const styles = StyleSheet.create({
     alignItems: "center",
     paddingTop: 70,
     paddingHorizontal: 0,
+    backgroundColor: Colors.darkPrimary,
+    flex: 1,
   },
   title: {
     textAlign: "center",
@@ -61,7 +64,7 @@ const styles = StyleSheet.create({
     textDecorationLine: "underline",
   },
   answerContainer: {
-    backgroundColor: "white",
+    backgroundColor: "#E0E0E0",
     borderRadius: 20,
     marginVertical: 20,
     marginHorizontal: 20,

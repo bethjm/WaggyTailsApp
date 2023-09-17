@@ -19,7 +19,7 @@ const SeeResults = ({ route }) => {
 
   return (
     <ImageBackground
-      source={require("../assets/images/End_Screen.png")}
+      source={require("../assets/images/dogcatpaw-dark.png")}
       style={styles.container}
     >
       <View>

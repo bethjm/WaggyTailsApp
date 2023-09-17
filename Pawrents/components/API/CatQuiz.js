@@ -40,16 +40,16 @@ const catQuiz = [
   //   correctAnswer:
   //     "Place a scratcher near the object they were scratching in the direction that they were scratching the object",
   // },
-  // {
-  //   questionText: `What are the proper steps for introducing a resident cat to a new cat?`,
-  //   options: [
-  //     "Keep them in separate spaces, let them sniff and play under the door. Introduce them between a gate, let them eat with each other. Give them short supervised meetings and monitor body language. When they are getting along you can let them share the same spaces",
-  //     "Spray them with a spray bottle when they are not getting along so they learn they need to get along",
-  //     "Introduce them between a baby gate and base next steps on their reaction. If they are not getting along, keep the baby gate in place. If they are getting along, then allow them free range.",
-  //   ],
-  //   correctAnswer:
-  //     "Keep them in separate spaces, let them sniff and play under the door. Introduce them between a gate, let them eat with each other. Give them short supervised meetings and monitor body language. When they are getting along you can let them share the same spaces.",
-  // },
+  {
+    questionText: `What are the proper steps for introducing a resident cat to a new cat?`,
+    options: [
+      "Keep them in separate spaces, let them sniff and play under the door. Introduce them between a gate, let them eat with each other. Give them short supervised meetings and monitor body language. When they are getting along you can let them share the same spaces",
+      "Spray them with a spray bottle when they are not getting along so they learn they need to get along",
+      "Introduce them between a baby gate and base next steps on their reaction. If they are not getting along, keep the baby gate in place. If they are getting along, then allow them free range.",
+    ],
+    correctAnswer:
+      "Keep them in separate spaces, let them sniff and play under the door. Introduce them between a gate, let them eat with each other. Give them short supervised meetings and monitor body language. When they are getting along you can let them share the same spaces.",
+  },
   // {
   //   questionText: "What does it mean to cat-ify your home?",
   //   options: [
@@ -81,7 +81,7 @@ const catQuiz = [
   // },
   // {
   //   questionText: "How often should you clip your cat's nails?",
-  //   options: ["Once a month", "Once a month", "Every 2-3 weeks"],
+  //   options: ["Once a month", "Once a week", "Every 2-3 weeks"],
   //   correctAnswer: "Every 2-3 weeks",
   // },
   // {
@@ -89,7 +89,7 @@ const catQuiz = [
   //   options: [
   //     "Short haired, once a week. Medium haired, 2-3 times a week. Long haired, daily.",
   //     "Short haired, do not need brushing. Medium haired, once a week. Long haired, 2-3 times a week.",
-  //     "zxcvbnm,Cats are able to self clean and do not need brushing",
+  //     "Cats are able to self clean and do not need brushing",
   //   ],
   //   correctAnswer:
   //     "Short haired, once a week. Medium haired, 2-3 times a week. Long haired, daily.",

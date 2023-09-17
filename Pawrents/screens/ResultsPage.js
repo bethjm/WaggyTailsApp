@@ -1,7 +1,8 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, ImageBackground } from "react-native";
 import { useNavigation, useRoute } from "@react-navigation/native";
 
 import PrimaryButton from "../components/ui/PrimaryButton";
+import DoubleButton from "../components/ui/DoubleButton";
 import Colors from "../constants/Colors";
 
 function ResultsPage() {
@@ -25,21 +26,24 @@ function ResultsPage() {
   };
 
   return (
-    <View style={styles.container}>
+    <ImageBackground
+      source={require("../assets/images/highpaw-dark.png")}
+      style={styles.container}
+    >
       <Text style={styles.title}>
         you got {correctAnswerScore}/17 questions correct
       </Text>
       {wrongAnswer.length > 0 ? (
         <View style={styles.buttonContainer}>
-          <PrimaryButton onPress={seeWrongAnswers}>
+          <DoubleButton onPress={seeWrongAnswers}>
             See incorrect answers
-          </PrimaryButton>
-          <PrimaryButton onPress={retakeQuiz}>Retake quiz</PrimaryButton>
+          </DoubleButton>
+          <DoubleButton onPress={retakeQuiz}>Retake quiz</DoubleButton>
         </View>
       ) : (
         <PrimaryButton onPress={retakeQuiz}>Retake quiz</PrimaryButton>
       )}
-    </View>
+    </ImageBackground>
   );
 }
 
@@ -60,7 +64,7 @@ const styles = StyleSheet.create({
     width: "100%",
   },
   buttonContainer: {
-    flexDirection: "column",
+    flexDirection: "row",
   },
   button: {},
 });

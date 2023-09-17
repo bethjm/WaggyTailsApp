@@ -1,5 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { View, StyleSheet, Text, ImageBackground } from "react-native";
+import {
+  View,
+  StyleSheet,
+  Text,
+  ImageBackground,
+  FlatList,
+} from "react-native";
 import Question from "../components/ui/Question";
 import Answers from "../components/ui/Answers";
 import CatQuiz from "../components/API/CatQuiz";
@@ -48,7 +54,7 @@ const CatQuizScreen = ({ navigation }) => {
   return (
     <ImageBackground
       style={styles.container}
-      source={require("../assets/images/Alt_Question_Background.png")}
+      source={require("../assets/images/catquizscreen-dark.png")}
       resizeMode="cover"
     >
       <View>
@@ -57,13 +63,17 @@ const CatQuizScreen = ({ navigation }) => {
             <Question
               questionText={CatQuiz[currentQuestionIndex].questionText}
             />
-            {CatQuiz[currentQuestionIndex].options.map((option, index) => (
-              <Answers
-                onPress={() => handleNextQuestion(option)}
-                answerText={option}
-                key={index}
-              />
-            ))}
+            <FlatList
+              data={CatQuiz[currentQuestionIndex].options}
+              renderItem={({ item, index }) => (
+                <Answers
+                  onPress={() => handleNextQuestion(item)}
+                  answerText={item}
+                  key={index}
+                />
+              )}
+              keyExtractor={(item) => item.toString()} // Ensure keyExtractor returns a string
+            />
           </>
         )}
       </View>
