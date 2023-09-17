@@ -37,7 +37,7 @@ export default CatOrDog;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingTop: 250,
+    justifyContent: "center",
     backgroundColor: Colors.lightPrimary,
   },
   title: {
