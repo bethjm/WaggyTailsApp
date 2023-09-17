@@ -8,27 +8,34 @@ function ResultsPage() {
   const navigation = useNavigation();
   const route = useRoute();
 
-  const { wrongAnswer, correctAnswerScore } = route.params;
+  const { wrongAnswer, correctAnswerScore, selectedAnswers } = route.params;
 
   const seeWrongAnswers = ({}) => {
-    navigation.navigate("WrongAnswers", { wrongAnswer, correctAnswerScore });
+    navigation.navigate("WrongAnswers", {
+      wrongAnswer,
+      correctAnswerScore,
+      selectedAnswers,
+    });
   };
 
-  const goToHome = () => {
+  const retakeQuiz = () => {
     navigation.navigate("CatOrDog");
-    //write code to reset answers when button pressed
+
+    console.log("reset");
   };
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>you got {correctAnswerScore}/17 correct</Text>
+      <Text style={styles.title}>
+        you got {correctAnswerScore}/17 questions correct
+      </Text>
       {wrongAnswer.length > 0 ? (
-        <>
+        <View style={styles.buttonContainer}>
           <PrimaryButton onPress={seeWrongAnswers}>
             See incorrect answers
           </PrimaryButton>
-          <PrimaryButton onPress={goToHome}>Retake quiz</PrimaryButton>
-        </>
+          <PrimaryButton onPress={retakeQuiz}>Retake quiz</PrimaryButton>
+        </View>
       ) : null}
     </View>
   );
@@ -50,4 +57,8 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     width: "100%",
   },
+  buttonContainer: {
+    flexDirection: "column",
+  },
+  button: {},
 });

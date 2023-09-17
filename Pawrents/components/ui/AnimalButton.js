@@ -15,7 +15,6 @@ function AnimalButton({ children, onPress, imageSource }) {
         onPress={onPress}
       >
         <Image source={imageSource} style={styles.image} />
-        {/* <Text style={styles.content}>{children}</Text> */}
       </Pressable>
     </View>
   );

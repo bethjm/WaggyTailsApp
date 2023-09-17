@@ -33,6 +33,8 @@ const CatQuizScreen = ({ navigation }) => {
     } else {
       goToSeeResults();
     }
+
+    // console.log(selectedAnswers, wrongAnswer, correctAnswerScore);
   };
 
   const goToSeeResults = () => {
