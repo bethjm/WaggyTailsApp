@@ -33,8 +33,6 @@ const CatQuizScreen = ({ navigation }) => {
       result,
     ]);
 
-    // setSelectedAnswers([...selectedAnswers, result]);
-
     if (selectedAnswer !== correctAnswer) {
       wrongAnswer.push(result.question);
     } else if (selectedAnswer === correctAnswer) {

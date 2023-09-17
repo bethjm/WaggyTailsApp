@@ -28,7 +28,7 @@ function WrongAnswers() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Questions answered incorrectly</Text>
+      <Text style={styles.title}>Incorrectly Answered</Text>
       <View style={styles.answerContainer}>
         {wrongAnswer.map((answer) => (
           <Text key={answer} style={styles.answerText}>
@@ -53,28 +53,28 @@ const styles = StyleSheet.create({
   container: {
     alignItems: "center",
     paddingTop: 70,
-    paddingHorizontal: 0,
+    paddingHorizontal: 10,
     backgroundColor: Colors.darkPrimary,
     flex: 1,
   },
   title: {
     textAlign: "center",
     fontSize: 30,
+    width: "80%",
     fontWeight: "bold",
     textDecorationLine: "underline",
   },
-  answerContainer: {
-    backgroundColor: "#E0E0E0",
-    borderRadius: 20,
-    marginVertical: 20,
-    marginHorizontal: 20,
-    paddingVertical: 30,
-    paddingHorizontal: 20,
-  },
+  answerContainer: {},
   answerText: {
     fontSize: 20,
     fontWeight: "bold",
     textAlign: "auto",
+    backgroundColor: "#E0E0E0",
+    borderRadius: 20,
+    marginVertical: 10,
+    marginHorizontal: 20,
+    paddingVertical: 20,
+    paddingHorizontal: 20,
   },
   buttonContainer: {
     flexDirection: "column",
