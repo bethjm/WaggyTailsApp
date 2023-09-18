@@ -19,7 +19,9 @@ function Welcome() {
         source={require("../assets/images/waggy_logo.webp")}
       />
       <Text style={styles.content}>Welcome to the WaggyTail adopter quiz</Text>
-      <PrimaryButton onPress={goToSecondScreen}>Next</PrimaryButton>
+      <PrimaryButton style={styles.button} onPress={goToSecondScreen}>
+        Next
+      </PrimaryButton>
     </View>
   );
 }
@@ -45,5 +47,13 @@ const styles = StyleSheet.create({
     textAlign: "center",
     width: "80%",
     fontWeight: "bold",
+  },
+  button: {
+    backgroundColor: Colors.darkPrimary,
+    borderRadius: 20,
+    paddingTop: 8,
+    paddingBottom: 8,
+    paddingHorizontal: 20,
+    textAlign: "center",
   },
 });

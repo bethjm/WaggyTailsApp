@@ -24,7 +24,7 @@ const SeeResults = ({ route }) => {
     >
       <View>
         <Text style={styles.title}>Congrats! You've finished the quiz!</Text>
-        <PrimaryButton onPress={goToResultsPage}>
+        <PrimaryButton style={styles.button} onPress={goToResultsPage}>
           See your results
         </PrimaryButton>
       </View>
@@ -47,5 +47,13 @@ const styles = StyleSheet.create({
     fontSize: 30,
     fontWeight: "bold",
     paddingBottom: 50,
+  },
+  button: {
+    backgroundColor: Colors.mediumPrimary,
+    borderRadius: 20,
+    paddingTop: 8,
+    paddingBottom: 8,
+    paddingHorizontal: 20,
+    textAlign: "center",
   },
 });

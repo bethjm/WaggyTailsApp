@@ -18,7 +18,9 @@ function OpenBook() {
         You may research the answers while taking the quiz or you can challenge
         yourself to see where your knowledge is at. The quiz is not timed.
       </Text>
-      <PrimaryButton onPress={goToScreenFour}>Get Started</PrimaryButton>
+      <PrimaryButton style={styles.button} onPress={goToScreenFour}>
+        Get Started
+      </PrimaryButton>
     </View>
   );
 }
@@ -44,6 +46,14 @@ const styles = StyleSheet.create({
     alignItems: "center",
     marginVertical: 40,
     fontSize: 24,
+    textAlign: "center",
+  },
+  button: {
+    backgroundColor: Colors.darkPrimary,
+    borderRadius: 20,
+    paddingTop: 8,
+    paddingBottom: 8,
+    paddingHorizontal: 20,
     textAlign: "center",
   },
 });

@@ -36,10 +36,12 @@ function WrongAnswers() {
         keyExtractor={(item) => item.toString()}
       />
       <View style={styles.buttonContainer}>
-        <PrimaryButton onPress={backToResults}>
-          Back to results page
+        <PrimaryButton onPress={backToResults} style={styles.button}>
+          Results Page
         </PrimaryButton>
-        <PrimaryButton onPress={retakeQuiz}>Retake quiz</PrimaryButton>
+        <PrimaryButton onPress={retakeQuiz} style={styles.button}>
+          Retake Quiz
+        </PrimaryButton>
       </View>
     </View>
   );
@@ -75,6 +77,17 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
   },
   buttonContainer: {
-    flexDirection: "column",
+    flexDirection: "row",
+    paddingVertical: 20,
+    justifyContent: "space-between",
+    width: "80%",
+  },
+  button: {
+    backgroundColor: Colors.mediumPrimary,
+    borderRadius: 20,
+    paddingTop: 8,
+    paddingBottom: 8,
+    paddingHorizontal: 20,
+    textAlign: "center",
   },
 });

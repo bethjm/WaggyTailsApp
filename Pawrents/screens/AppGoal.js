@@ -19,7 +19,9 @@ function AppGoal() {
         essential information for keeping furry friends happy and healthy before
         bringing them home.
       </Text>
-      <PrimaryButton onPress={goToScreenThree}>Next</PrimaryButton>
+      <PrimaryButton style={styles.button} onPress={goToScreenThree}>
+        Next
+      </PrimaryButton>
     </View>
   );
 }
@@ -45,6 +47,14 @@ const styles = StyleSheet.create({
     alignItems: "center",
     marginVertical: 40,
     fontSize: 24,
+    textAlign: "center",
+  },
+  button: {
+    backgroundColor: Colors.darkPrimary,
+    borderRadius: 20,
+    paddingTop: 8,
+    paddingBottom: 8,
+    paddingHorizontal: 20,
     textAlign: "center",
   },
 });

@@ -2,7 +2,6 @@ import { View, Text, StyleSheet, ImageBackground } from "react-native";
 import { useNavigation, useRoute } from "@react-navigation/native";
 
 import PrimaryButton from "../components/ui/PrimaryButton";
-import DoubleButton from "../components/ui/DoubleButton";
 import Colors from "../constants/Colors";
 
 function ResultsPage() {
@@ -33,13 +32,17 @@ function ResultsPage() {
       </Text>
       {wrongAnswer.length > 0 ? (
         <View style={styles.buttonContainer}>
-          <DoubleButton onPress={seeWrongAnswers}>
-            See incorrect answers
-          </DoubleButton>
-          <DoubleButton onPress={retakeQuiz}>Retake quiz</DoubleButton>
+          <PrimaryButton style={styles.button} onPress={seeWrongAnswers}>
+            Incorrect Answers
+          </PrimaryButton>
+          <PrimaryButton style={styles.button} onPress={retakeQuiz}>
+            Retake the quiz
+          </PrimaryButton>
         </View>
       ) : (
-        <PrimaryButton onPress={retakeQuiz}>Retake quiz</PrimaryButton>
+        <PrimaryButton style={styles.button} onPress={retakeQuiz}>
+          Retake the quiz
+        </PrimaryButton>
       )}
     </ImageBackground>
   );
@@ -63,6 +66,17 @@ const styles = StyleSheet.create({
   },
   buttonContainer: {
     flexDirection: "row",
+    paddingVertical: 20,
+    justifyContent: "space-around",
+    width: "90%",
   },
-  button: {},
+  button: {
+    backgroundColor: Colors.mediumPrimary,
+    borderRadius: 30,
+    paddingTop: 8,
+    paddingBottom: 8,
+    paddingHorizontal: 20,
+    textAlign: "center",
+    marginHorizontal: 10,
+  },
 });
