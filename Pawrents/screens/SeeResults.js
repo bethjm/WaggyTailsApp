@@ -7,13 +7,23 @@ import Colors from "../constants/Colors";
 const SeeResults = ({ route }) => {
   const navigation = useNavigation();
 
-  const { selectedAnswers, wrongAnswer, correctAnswerScore } = route.params;
+  let {
+    selectedAnswers,
+    wrongAnswer,
+    correctAnswerScore,
+    CatQuiz,
+    DogQuiz,
+    sourceQuiz,
+  } = route.params;
 
   const goToResultsPage = () => {
     navigation.navigate("ResultsPage", {
       quizResults: selectedAnswers,
       wrongAnswer: wrongAnswer,
       correctAnswerScore: correctAnswerScore,
+      CatQuiz: CatQuiz,
+      DogQuiz: DogQuiz,
+      sourceQuiz,
     });
   };
 

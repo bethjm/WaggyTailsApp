@@ -49,6 +49,8 @@ const DogQuizScreen = ({ navigation }) => {
       quizResults: selectedAnswers,
       wrongAnswer: wrongAnswer,
       correctAnswerScore: correctAnswerScore,
+      DogQuiz: DogQuiz,
+      sourceQuiz: "Dog",
     });
   };
 

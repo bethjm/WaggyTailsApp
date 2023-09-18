@@ -49,6 +49,8 @@ const CatQuizScreen = ({ navigation }) => {
       quizResults: selectedAnswers,
       wrongAnswer: wrongAnswer,
       correctAnswerScore: correctAnswerScore,
+      CatQuiz: CatQuiz,
+      sourceQuiz: "Cat",
     });
   };
 

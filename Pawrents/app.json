@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "Pawrents",
+    "name": "WaggyTail Adoption Quiz",
     "slug": "Pawrents",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -9,7 +9,7 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#26BCDE"
+      "backgroundColor": "#C7EEF5"
     },
     "assetBundlePatterns": ["**/*"],
     "ios": {

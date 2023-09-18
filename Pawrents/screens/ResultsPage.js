@@ -8,7 +8,14 @@ function ResultsPage() {
   const navigation = useNavigation();
   const route = useRoute();
 
-  let { wrongAnswer, correctAnswerScore, selectedAnswers } = route.params;
+  let {
+    wrongAnswer,
+    correctAnswerScore,
+    selectedAnswers,
+    CatQuiz,
+    DogQuiz,
+    sourceQuiz,
+  } = route.params;
 
   const seeWrongAnswers = ({}) => {
     navigation.navigate("WrongAnswers", {
@@ -28,7 +35,9 @@ function ResultsPage() {
       style={styles.container}
     >
       <Text style={styles.title}>
-        You got {correctAnswerScore}/17 questions correct
+        You got {correctAnswerScore}/
+        {sourceQuiz === "Cat" ? CatQuiz.length : DogQuiz.length} questions
+        correct
       </Text>
       {wrongAnswer.length > 0 ? (
         <View style={styles.buttonContainer}>
