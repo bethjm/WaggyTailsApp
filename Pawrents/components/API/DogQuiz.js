@@ -20,13 +20,14 @@ const DogQuiz = [
       "It gives your dog a safe and quiet place to escape to when they feel overwhelmed or tired. Helps you know your dog is safe when you are not home. Help your travels safely with the dog. Helps with bowel control.",
   },
   {
-    questionText: "What is the best way to introduce them to a resident pet?",
+    questionText:
+      "What is WaggyTail Rescues reccomendation for introducing new pups to resident pups?",
     options: [
-      "aaaaaaaaaaaaaaaaaaaafaaaaaaaa",
-      "aaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-      "aaaaaaaaasaaaaaaaaaaaaaaaaaaaa",
+      "Dogs must meet outside on neutral ground",
+      "You do not have to worry about introducing dogs to eachother",
+      "Introduce them between a baby gate and base next steps on their reaction. If they are not getting along, keep the baby gate in place. If they are getting along, then allow them free range.",
     ],
-    correctAnswer: "aaaaaaaaaaaaaaaaaaaafaaaaaaaa",
+    correctAnswer: "Dogs must meet outside on neutral ground",
   },
   {
     questionText: "How long does doggy potty training take?",
