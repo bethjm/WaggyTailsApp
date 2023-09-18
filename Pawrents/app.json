@@ -12,7 +12,7 @@
       "backgroundColor": "#C7EEF5"
     },
     "updates": {
-      "fallbacktoCacheTimeout": 0
+      "fallbackToCacheTimeout": 0
     },
     "assetBundlePatterns": ["**/*"],
     "ios": {
@@ -24,10 +24,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#C7EEF5"
-      }
+      },
+      "package": "Pawrents.WaggyTail.Applicant.Quiz"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "97292965-bfbf-4124-ba2c-138729c0b333"
+      }
     }
   }
 }

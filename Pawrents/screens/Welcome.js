@@ -16,7 +16,7 @@ function Welcome() {
     <View style={styles.container}>
       <Image
         style={styles.image}
-        source={require("../assets/images/waggy_logo.webp")}
+        source={require("../assets/images/waggy_logo.png")}
       />
       <Text style={styles.content}>Welcome to the WaggyTail adopter quiz</Text>
       <PrimaryButton style={styles.button} onPress={goToSecondScreen}>
