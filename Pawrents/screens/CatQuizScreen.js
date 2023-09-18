@@ -77,7 +77,7 @@ const CatQuizScreen = ({ navigation }) => {
                   key={index}
                 />
               )}
-              keyExtractor={(item) => item.toString()} // Ensure keyExtractor returns a string
+              keyExtractor={(item) => item.toString()}
             />
           </>
         )}

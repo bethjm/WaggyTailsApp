@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, FlatList } from "react-native";
 import { useNavigation, useRoute } from "@react-navigation/native";
 
 import PrimaryButton from "../components/ui/PrimaryButton";
@@ -30,11 +30,13 @@ function WrongAnswers() {
     <View style={styles.container}>
       <Text style={styles.title}>Incorrectly Answered</Text>
       <View style={styles.answerContainer}>
-        {wrongAnswer.map((answer) => (
-          <Text key={answer} style={styles.answerText}>
-            {answer}
-          </Text>
-        ))}
+        <FlatList
+          data={wrongAnswer}
+          renderItem={(itemData) => (
+            <Text style={styles.answerText}>{itemData.item}</Text>
+          )}
+          keyExtractor={(item) => item.toString()}
+        />
       </View>
 
       <View style={styles.buttonContainer}>
