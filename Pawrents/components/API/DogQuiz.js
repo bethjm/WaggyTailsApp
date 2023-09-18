@@ -168,7 +168,7 @@ const DogQuiz = [
     options: [
       "Becuase you should know what kind of dog you want",
       "To make sure the type of dog you are adopting matches your lifestyle. Different dog breads have different temperaments. Some are higher energy than other. Some are harder to train than others. Certain breeds have more health issues than others. ",
-      "There is no need to research dog breeds before adopting",
+      "There is no need to research dog breeds before adopting a dog",
     ],
     correctAnswer:
       "To make sure the type of dog you are adopting matches your lifestyle. Different dog breads have different temperaments. Some are higher energy than other. Some are harder to train than others. Certain breeds have more health issues than others. ",
