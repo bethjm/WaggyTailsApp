@@ -9,7 +9,7 @@ function ResultsPage() {
   const navigation = useNavigation();
   const route = useRoute();
 
-  const { wrongAnswer, correctAnswerScore, selectedAnswers } = route.params;
+  let { wrongAnswer, correctAnswerScore, selectedAnswers } = route.params;
 
   const seeWrongAnswers = ({}) => {
     navigation.navigate("WrongAnswers", {
@@ -21,8 +21,6 @@ function ResultsPage() {
 
   const retakeQuiz = () => {
     navigation.navigate("CatOrDog");
-
-    console.log("reset");
   };
 
   return (

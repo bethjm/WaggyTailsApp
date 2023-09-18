@@ -8,7 +8,7 @@ function WrongAnswers() {
   const navigation = useNavigation();
   const route = useRoute();
 
-  const { wrongAnswer, correctAnswerScore, selectedAnswers } = route.params;
+  let { wrongAnswer, correctAnswerScore, selectedAnswers } = route.params;
 
   const backToResults = () => {
     navigation.navigate("ResultsPage", {
@@ -22,23 +22,19 @@ function WrongAnswers() {
     correctAnswerScore = 0;
     wrongAnswer = [];
     selectedAnswers = [];
-    console.log("reset quiz", correctAnswerScore, wrongAnswer, selectedAnswers);
     navigation.navigate("CatOrDog");
   };
 
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Incorrectly Answered</Text>
-      <View style={styles.answerContainer}>
-        <FlatList
-          data={wrongAnswer}
-          renderItem={(itemData) => (
-            <Text style={styles.answerText}>{itemData.item}</Text>
-          )}
-          keyExtractor={(item) => item.toString()}
-        />
-      </View>
-
+      <FlatList
+        data={wrongAnswer}
+        renderItem={(itemData) => (
+          <Text style={styles.answerText}>{itemData.item}</Text>
+        )}
+        keyExtractor={(item) => item.toString()}
+      />
       <View style={styles.buttonContainer}>
         <PrimaryButton onPress={backToResults}>
           Back to results page
