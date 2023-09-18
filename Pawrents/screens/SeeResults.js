@@ -53,7 +53,8 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     paddingTop: 8,
     paddingBottom: 8,
-    paddingHorizontal: 20,
+    paddingHorizontal: 10,
     textAlign: "center",
+    justifyContent: "center",
   },
 });

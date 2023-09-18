@@ -13,7 +13,9 @@ function PrimaryButton({ children, onPress, style }) {
         }
         onPress={onPress}
       >
-        <Text style={[styles.content, style]}>{children}</Text>
+        <View style={[styles.content, style]}>
+          <Text style={styles.buttonText}>{children}</Text>
+        </View>
       </Pressable>
     </View>
   );
@@ -31,6 +33,9 @@ const styles = StyleSheet.create({
   },
   pressed: {
     opacity: 0.75,
+  },
+  buttonText: {
+    color: "white",
   },
 });
 
