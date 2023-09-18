@@ -1,41 +1,91 @@
-import Colors from "../constants/Colors";
-import PrimaryButton from "../components/ui/PrimaryButton";
+import React, { useState, useEffect } from "react";
+import {
+  View,
+  StyleSheet,
+  Text,
+  ImageBackground,
+  FlatList,
+} from "react-native";
+import Question from "../components/ui/Question";
+import Answers from "../components/ui/Answers";
+import DogQuiz from "../components/API/DogQuiz";
 
-import { StyleSheet, View, Text } from "react-native";
-import { useNavigation } from "@react-navigation/native";
+const DogQuizScreen = ({ navigation }) => {
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+  const [selectedAnswers, setSelectedAnswers] = useState([]);
+  const [correctAnswerScore, setCorrectAnswerScore] = useState(0);
+  const [wrongAnswer, setWrongAnswer] = useState([]);
 
-function DogQuizScreen() {
-  const navigation = useNavigation();
+  const handleNextQuestion = (selectedAnswer) => {
+    const currentQuestion = DogQuiz[currentQuestionIndex];
+    const correctAnswer = currentQuestion.correctAnswer;
 
-  const goToScreenWelcome = () => {
-    navigation.navigate("Welcome");
+    const result = {
+      question: currentQuestion.questionText,
+      userAnswer: selectedAnswer,
+      correctAnswer: correctAnswer,
+    };
+
+    setSelectedAnswers((prevSelectedAnswers) => [
+      ...prevSelectedAnswers,
+      result,
+    ]);
+
+    if (selectedAnswer !== correctAnswer) {
+      wrongAnswer.push(result.question);
+    } else if (selectedAnswer === correctAnswer) {
+      setCorrectAnswerScore(correctAnswerScore + 1);
+    }
+
+    if (currentQuestionIndex < DogQuiz.length - 1) {
+      setCurrentQuestionIndex(currentQuestionIndex + 1);
+    } else {
+      goToSeeResults(selectedAnswers);
+    }
+  };
+
+  const goToSeeResults = () => {
+    navigation.navigate("SeeResults", {
+      quizResults: selectedAnswers,
+      wrongAnswer: wrongAnswer,
+      correctAnswerScore: correctAnswerScore,
+    });
   };
 
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Dog questions have not been created yet.</Text>
-      <PrimaryButton style={styles.button} onPress={goToScreenWelcome}>
-        Back to begining
-      </PrimaryButton>
-    </View>
+    <ImageBackground
+      style={styles.container}
+      source={require("../assets/images/dogquizscreen-dark.png")}
+      resizeMode="cover"
+    >
+      <View>
+        {DogQuiz.length > 0 && (
+          <>
+            <Question
+              questionText={DogQuiz[currentQuestionIndex].questionText}
+            />
+            <FlatList
+              data={DogQuiz[currentQuestionIndex].options}
+              renderItem={({ item, index }) => (
+                <Answers
+                  onPress={() => handleNextQuestion(item)}
+                  answerText={item}
+                  key={index}
+                />
+              )}
+              keyExtractor={(item) => item.toString()}
+            />
+          </>
+        )}
+      </View>
+    </ImageBackground>
   );
-}
+};
 
 export default DogQuizScreen;
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: "center",
-    paddingTop: 250,
-    backgroundColor: Colors.lightPrimary,
-    paddingHorizontal: 30,
-  },
-  title: {
-    textAlign: "center",
-    fontSize: 30,
-    fontWeight: "bold",
-    width: "100%",
-    marginBottom: 30,
   },
 });

@@ -18,7 +18,6 @@ const Stack = createStackNavigator();
 function App() {
   return (
     <View style={styles.container}>
-      {/* <SafeAreaView style={styles.container}> */}
       <NavigationContainer>
         <Stack.Navigator
           initialRouteName="Welcome"
@@ -35,7 +34,6 @@ function App() {
           <Stack.Screen name="WrongAnswers" component={WrongAnswers} />
         </Stack.Navigator>
       </NavigationContainer>
-      {/* </SafeAreaView> */}
     </View>
   );
 }
