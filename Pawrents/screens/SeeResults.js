@@ -18,14 +18,16 @@ const SeeResults = ({ route }) => {
 
   const goToResultsPage = () => {
     navigation.navigate("ResultsPage", {
-      quizResults: selectedAnswers,
-      wrongAnswer: wrongAnswer,
       correctAnswerScore: correctAnswerScore,
+      selectedAnswers: selectedAnswers,
       CatQuiz: CatQuiz,
       DogQuiz: DogQuiz,
-      sourceQuiz,
+      sourceQuiz: sourceQuiz,
+      wrongAnswer: wrongAnswer,
     });
   };
+
+  console.log("wrong answer length- see results", wrongAnswer.length);
 
   return (
     <ImageBackground

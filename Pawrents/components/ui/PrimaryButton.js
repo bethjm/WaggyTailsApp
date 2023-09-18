@@ -29,13 +29,13 @@ const styles = StyleSheet.create({
   content: {
     color: "white",
     alignItems: "center",
-    fontSize: 18,
   },
   pressed: {
     opacity: 0.75,
   },
   buttonText: {
     color: "white",
+    fontSize: 20,
   },
 });
 

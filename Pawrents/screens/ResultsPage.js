@@ -9,25 +9,30 @@ function ResultsPage() {
   const route = useRoute();
 
   let {
-    wrongAnswer,
-    correctAnswerScore,
-    selectedAnswers,
-    CatQuiz,
-    DogQuiz,
-    sourceQuiz,
+    wrongAnswer: wrongAnswer,
+    correctAnswerScore: correctAnswerScore,
+    selectedAnswers: selectedAnswers,
+    CatQuiz: CatQuiz,
+    DogQuiz: DogQuiz,
+    sourceQuiz: sourceQuiz,
   } = route.params;
 
-  const seeWrongAnswers = ({}) => {
+  const seeWrongAnswers = () => {
     navigation.navigate("WrongAnswers", {
-      wrongAnswer,
-      correctAnswerScore,
-      selectedAnswers,
+      correctAnswerScore: correctAnswerScore,
+      selectedAnswers: selectedAnswers,
+      CatQuiz: CatQuiz,
+      DogQuiz: DogQuiz,
+      sourceQuiz: sourceQuiz,
+      wrongAnswer: wrongAnswer,
     });
   };
 
   const retakeQuiz = () => {
     navigation.navigate("CatOrDog");
   };
+
+  console.log("wrong answer length- results page", wrongAnswer.length);
 
   return (
     <ImageBackground

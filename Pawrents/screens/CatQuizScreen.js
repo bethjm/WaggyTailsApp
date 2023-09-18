@@ -42,6 +42,8 @@ const CatQuizScreen = ({ navigation }) => {
     } else {
       goToSeeResults(selectedAnswers);
     }
+
+    console.log("wrong answer length", wrongAnswer.length);
   };
 
   const goToSeeResults = () => {

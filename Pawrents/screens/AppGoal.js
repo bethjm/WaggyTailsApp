@@ -51,10 +51,10 @@ const styles = StyleSheet.create({
   },
   button: {
     backgroundColor: Colors.darkPrimary,
-    borderRadius: 20,
-    paddingTop: 8,
-    paddingBottom: 8,
-    paddingHorizontal: 20,
+    borderRadius: 10,
+    paddingTop: 10,
+    paddingBottom: 10,
+    paddingHorizontal: 30,
     textAlign: "center",
   },
 });

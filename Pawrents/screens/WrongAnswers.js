@@ -8,15 +8,27 @@ function WrongAnswers() {
   const navigation = useNavigation();
   const route = useRoute();
 
-  let { wrongAnswer, correctAnswerScore, selectedAnswers } = route.params;
+  let {
+    wrongAnswer,
+    correctAnswerScore,
+    selectedAnswers,
+    CatQuiz,
+    DogQuiz,
+    sourceQuiz,
+  } = route.params;
 
   const backToResults = () => {
     navigation.navigate("ResultsPage", {
       correctAnswerScore: correctAnswerScore,
+      selectedAnswers: selectedAnswers,
+      CatQuiz: CatQuiz,
+      DogQuiz: DogQuiz,
+      sourceQuiz: sourceQuiz,
       wrongAnswer: wrongAnswer,
-      selectedAnswers,
     });
   };
+
+  console.log("wrong answer length- wrong answer page", wrongAnswer.length);
 
   const retakeQuiz = () => {
     correctAnswerScore = 0;
