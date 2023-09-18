@@ -28,13 +28,17 @@ function WrongAnswers() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Incorrectly Answered</Text>
+
       <FlatList
         data={wrongAnswer}
         renderItem={(itemData) => (
-          <Text style={styles.answerText}>{itemData.item}</Text>
+          <View style={styles.answerContainer}>
+            <Text style={styles.answerText}>{itemData.item}</Text>
+          </View>
         )}
         keyExtractor={(item) => item.toString()}
       />
+
       <View style={styles.buttonContainer}>
         <PrimaryButton onPress={backToResults} style={styles.button}>
           Results Page
@@ -64,23 +68,23 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     textDecorationLine: "underline",
   },
-  answerContainer: {},
+  answerContainer: {
+    borderRadius: 30,
+    backgroundColor: "#E0E0E0",
+    textAlign: "auto",
+    marginVertical: 10,
+    marginHorizontal: 20,
+    paddingVertical: 30,
+    paddingHorizontal: 30,
+  },
   answerText: {
     fontSize: 20,
     fontWeight: "bold",
-    textAlign: "auto",
-    backgroundColor: "#E0E0E0",
-    borderRadius: 20,
-    marginVertical: 10,
-    marginHorizontal: 20,
-    paddingVertical: 20,
-    paddingHorizontal: 20,
   },
   buttonContainer: {
     flexDirection: "row",
     paddingVertical: 20,
-    justifyContent: "space-between",
-    width: "80%",
+    justifyContent: "center",
   },
   button: {
     backgroundColor: Colors.mediumPrimary,
@@ -89,5 +93,9 @@ const styles = StyleSheet.create({
     paddingBottom: 8,
     paddingHorizontal: 20,
     textAlign: "center",
+    marginHorizontal: 5,
+  },
+  borderTest: {
+    borderRadius: 20,
   },
 });

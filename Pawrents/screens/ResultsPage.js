@@ -28,7 +28,7 @@ function ResultsPage() {
       style={styles.container}
     >
       <Text style={styles.title}>
-        you got {correctAnswerScore}/17 questions correct
+        You got {correctAnswerScore}/17 questions correct
       </Text>
       {wrongAnswer.length > 0 ? (
         <View style={styles.buttonContainer}>
@@ -65,18 +65,17 @@ const styles = StyleSheet.create({
     width: "100%",
   },
   buttonContainer: {
-    flexDirection: "row",
+    flexDirection: "column",
     paddingVertical: 20,
-    justifyContent: "space-around",
-    width: "90%",
+    width: "70%",
   },
   button: {
     backgroundColor: Colors.mediumPrimary,
     borderRadius: 30,
     paddingTop: 8,
     paddingBottom: 8,
-    paddingHorizontal: 20,
+    paddingHorizontal: 10,
     textAlign: "center",
-    marginHorizontal: 10,
+    marginVertical: 10,
   },
 });

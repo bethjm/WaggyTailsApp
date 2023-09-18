@@ -11,7 +11,6 @@ function PrimaryButton({ children, onPress, style }) {
             ? [styles.innerContainer, styles.pressed]
             : styles.innerContainer
         }
-        android_ripple={{ color: "#26BCDE" }}
         onPress={onPress}
       >
         <Text style={[styles.content, style]}>{children}</Text>
@@ -22,18 +21,9 @@ function PrimaryButton({ children, onPress, style }) {
 
 const styles = StyleSheet.create({
   outterContainer: {
-    borderRadius: 20,
     overflow: "hidden",
-    flex: 1,
   },
-  innerContainer: {
-    backgroundColor: Colors.darkPrimary,
-    elevation: 9,
-    shadowColor: "black",
-    shadowOffset: { width: 0, height: 2 },
-    shadowRadius: 6,
-    shadowOpacity: 0.25,
-  },
+  innerContainer: {},
   content: {
     color: "white",
     alignItems: "center",
