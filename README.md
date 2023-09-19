@@ -1,6 +1,6 @@
 **Project Title:** Pet Care Education App
 
-**Click link to see photos of UI**
+**Click Link to See Photos of UI**
 https://github.com/bethjm/WaggyTailsApp/tree/main/UI_Photos
 
 **Summary:**
@@ -13,9 +13,9 @@ The Pet Care Education App is a versatile mobile application aimed at providing 
 
 - **User-Friendly Interface:** With a user-friendly and intuitive interface, the app offers a seamless navigation experience, ensuring that users can easily access educational content and quizzes for both dogs and cats.
 
-- **Android App Testing:** Android Studio integration has been employed to ensure comprehensive testing and debugging of the app on Android devices, guaranteeing a polished user experience for dog and cat owners alike.
+- **Android and iOS Compatibility:** The app has been thoroughly tested and optimized for both Android and iOS platforms, ensuring a polished user experience for dog and cat owners using devices such as Android phones and iPhones.
 
-- **Global State Management:** The project utilizes Redux (or similar state management) to efficiently manage application state and data flow, enhancing the overall responsiveness and functionality of the app for both pet categories.
+- **Global State Management:** The project utilizes Redux to efficiently manage application state and data flow, enhancing the overall responsiveness and functionality of the app for both pet categories.
 
 - **Error Handling and Bug Fixing:** Robust error handling mechanisms have been implemented to ensure that the app runs smoothly, and bug fixes have been applied to enhance reliability for both dog and cat enthusiasts.
 
