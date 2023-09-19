@@ -1,5 +1,8 @@
 **Project Title:** Pet Care Education App
 
+**Click link to see photos of UI**
+https://github.com/bethjm/WaggyTailsApp/tree/main/UI_Photos
+
 **Summary:**
 
 The Pet Care Education App is a versatile mobile application aimed at providing users with essential knowledge and guidance on responsible pet ownership and care for both dogs and cats. Developed using React Native, this educational app is designed to promote the well-being of pets and enhance the understanding of pet owners regarding their canine and feline companions.
