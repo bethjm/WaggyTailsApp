@@ -5,12 +5,12 @@ const DogQuiz = [
       "Upstate Canine Academy",
       "Pat Miller",
       "Jean Donaldson",
-      "Update Canine Academy, Pat Miller, and Jean Donaldson",
+      "Upstate Canine Academy, Pat Miller, and Jean Donaldson",
     ],
     correctAnswer: "Upstate Canine Academy, Pat Miller, and Jean Donaldson",
   },
   {
-    questionText: "Why should you create train your dog?",
+    questionText: "Why should you crate train your dog?",
     options: [
       "It gives your dog a safe and quiet place to escape to when they feel overwhelmed or tired. Helps you know your dog is safe when you are not home. Help your travels safely with the dog. Helps with bowel control.",
       "So that they have a place to go when they are being punished",
@@ -21,10 +21,10 @@ const DogQuiz = [
   },
   {
     questionText:
-      "What is WaggyTail Rescues reccomendation for introducing new pups to resident pups?",
+      "What is Waggytail Rescues recomendation for introducing new pups to resident pups?",
     options: [
       "Dogs must meet outside on neutral ground",
-      "You do not have to worry about introducing dogs to eachother",
+      "You do not have to worry about introducing dogs to each other",
       "Introduce them between a baby gate and base next steps on their reaction. If they are not getting along, keep the baby gate in place. If they are getting along, then allow them free range.",
     ],
     correctAnswer: "Dogs must meet outside on neutral ground",
@@ -64,14 +64,14 @@ const DogQuiz = [
       "Puppies: 2-3 hours. Dogs: 4-6 hours (or 8-9 with enough space to safely move around)",
   },
   {
-    questionText: "What can a puppy do before the are fully vaccinated?",
+    questionText: "What can a puppy do before they are fully vaccinated?",
     options: [
       "You can *carry* your pup outside. Invite friends and family over to meet the pup. Take them to a dog free friends house. Take a puppy class. Take them for car rides.",
       "There are no restrictions for an unvaccinated puppy",
-      "You can walk your dog outside wwith other dogs, go to dog parks, and meet friends and family",
+      "You can walk your dog outside with other dogs, go to dog parks, and meet friends and family",
     ],
     correctAnswer:
-      "You can **carry** your pup outside. Invite friends and family over to meet the pup. Take them to a dog free friends house. Take a puppy class. Take them for car rides.",
+      "You can *carry* your pup outside. Invite friends and family over to meet the pup. Take them to a dog free friends house. Take a puppy class. Take them for car rides.",
   },
   {
     questionText: "What should you do if your dog is barking excessively?",
@@ -143,7 +143,7 @@ const DogQuiz = [
   {
     questionText: "How often to clip your dogs nails?",
     options: ["Every 1-2 months", "Every 4-6 weeks", "Every 3-4 weeks"],
-    correctAnswer: "Every 3-4 weeks ",
+    correctAnswer: "Every 3-4 weeks",
   },
   {
     questionText: "What foods can dogs not have?",
@@ -152,17 +152,17 @@ const DogQuiz = [
       "chocolate, red meat, chicken, carrots, sweet potato",
       "There are no restrictions on what a dog can eat",
     ],
-    correctAnswer: "Grapes, Raisins, Avocados, garlic, onion, chicken bones",
+    correctAnswer: "grapes, raisins, avocados, garlic, onion, chicken bones",
   },
   {
     questionText: "What training should your dog have?",
     options: [
       "Not all dogs need training",
       "Stop it and quiet commands",
-      "Sit, walk nicely on a leash, come, stay, no jumping on people",
+      "Sit, walk nicely on a leash, come, stay, no jumping on people, quiet",
     ],
     correctAnswer:
-      "Sit, walk nicely on a leash, come, stay, no jumping on people",
+      "Sit, walk nicely on a leash, come, stay, no jumping on people, quiet",
   },
   {
     questionText: "Why should you research dog breeds before adopting?",

@@ -48,7 +48,7 @@ const catQuiz = [
       "Introduce them between a baby gate and base next steps on their reaction. If they are not getting along, keep the baby gate in place. If they are getting along, then allow them free range.",
     ],
     correctAnswer:
-      "Keep them in separate spaces, let them sniff and play under the door. Introduce them between a gate, let them eat with each other. Give them short supervised meetings and monitor body language. When they are getting along you can let them share the same spaces.",
+      "Keep them in separate spaces, let them sniff and play under the door. Introduce them between a gate, let them eat with each other. Give them short supervised meetings and monitor body language. When they are getting along you can let them share the same spaces",
   },
   {
     questionText: "What does it mean to cat-ify your home?",

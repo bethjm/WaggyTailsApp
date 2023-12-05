@@ -24,11 +24,17 @@ function PrimaryButton({ children, onPress, style }) {
 const styles = StyleSheet.create({
   outterContainer: {
     overflow: "hidden",
+    // backgroundColor: Colors.darkPrimary,
+    // borderRadius: 10,
+    // paddingTop: 10,
+    // paddingBottom: 10,
+    // paddingHorizontal: 30,
   },
   innerContainer: {},
   content: {
     color: "white",
     alignItems: "center",
+    textAlign: "center",
   },
   pressed: {
     opacity: 0.75,
