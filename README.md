@@ -1,7 +1,7 @@
 **Project Title:** Pet Care Education App
 
-**Click Link to See Photos of UI**
-https://github.com/bethjm/WaggyTailsApp/tree/main/UI_Photos
+**Click Link to visit the WaggyTail Quiz App**
+https://waggyadoptquiz.netlify.app/
 
 **Summary:**
 
