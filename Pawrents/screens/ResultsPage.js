@@ -18,7 +18,7 @@ function ResultsPage() {
   } = route.params;
 
   const seeWrongAnswers = () => {
-    navigation.navigate("WrongAnswers", {
+    navigation.navigate("Review", {
       correctAnswerScore: correctAnswerScore,
       selectedAnswers: selectedAnswers,
       CatQuiz: CatQuiz,
@@ -29,7 +29,7 @@ function ResultsPage() {
   };
 
   const retakeQuiz = () => {
-    navigation.navigate("CatOrDog");
+    navigation.navigate("Choose");
   };
 
   console.log("wrong answer length- results page", wrongAnswer.length);

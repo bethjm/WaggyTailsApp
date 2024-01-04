@@ -9,7 +9,7 @@ function Welcome() {
   const navigation = useNavigation();
 
   const goToSecondScreen = () => {
-    navigation.navigate("AppGoal");
+    navigation.navigate("Goal");
   };
 
   return (

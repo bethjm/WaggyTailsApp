@@ -8,11 +8,11 @@ function CatOrDog() {
   const navigation = useNavigation();
 
   const goToCatQuizScreen = () => {
-    navigation.navigate("CatQuizScreen");
+    navigation.navigate("CatQuiz");
   };
 
   const goToDogQuizScreen = () => {
-    navigation.navigate("DogQuizScreen");
+    navigation.navigate("DogQuiz");
   };
 
   return (

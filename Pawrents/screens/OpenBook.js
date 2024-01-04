@@ -8,7 +8,7 @@ function OpenBook() {
   const navigation = useNavigation();
 
   const goToScreenFour = () => {
-    navigation.navigate("CatOrDog");
+    navigation.navigate("Choose");
   };
 
   return (

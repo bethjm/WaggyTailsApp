@@ -18,7 +18,7 @@ function WrongAnswers() {
   } = route.params;
 
   const backToResults = () => {
-    navigation.navigate("ResultsPage", {
+    navigation.navigate("Results", {
       correctAnswerScore: correctAnswerScore,
       selectedAnswers: selectedAnswers,
       CatQuiz: CatQuiz,
@@ -34,7 +34,7 @@ function WrongAnswers() {
     correctAnswerScore = 0;
     wrongAnswer = [];
     selectedAnswers = [];
-    navigation.navigate("CatOrDog");
+    navigation.navigate("Choose");
   };
 
   return (

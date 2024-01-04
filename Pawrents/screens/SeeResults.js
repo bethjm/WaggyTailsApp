@@ -17,7 +17,7 @@ const SeeResults = ({ route }) => {
   } = route.params;
 
   const goToResultsPage = () => {
-    navigation.navigate("ResultsPage", {
+    navigation.navigate("Results", {
       correctAnswerScore: correctAnswerScore,
       selectedAnswers: selectedAnswers,
       CatQuiz: CatQuiz,

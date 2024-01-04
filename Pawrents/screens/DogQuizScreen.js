@@ -45,7 +45,7 @@ const DogQuizScreen = ({ navigation }) => {
   };
 
   const goToSeeResults = () => {
-    navigation.navigate("SeeResults", {
+    navigation.navigate("Ready", {
       quizResults: selectedAnswers,
       wrongAnswer: wrongAnswer,
       correctAnswerScore: correctAnswerScore,

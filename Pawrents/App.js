@@ -24,14 +24,14 @@ function App() {
           screenOptions={{ headerShown: false }}
         >
           <Stack.Screen name="Welcome" component={Welcome} />
-          <Stack.Screen name="AppGoal" component={AppGoal} />
-          <Stack.Screen name="OpenBook" component={OpenBook} />
-          <Stack.Screen name="CatOrDog" component={CatOrDog} />
-          <Stack.Screen name="CatQuizScreen" component={CatQuizScreen} />
-          <Stack.Screen name="DogQuizScreen" component={DogQuizScreen} />
-          <Stack.Screen name="SeeResults" component={SeeResults} />
-          <Stack.Screen name="ResultsPage" component={ResultsPage} />
-          <Stack.Screen name="WrongAnswers" component={WrongAnswers} />
+          <Stack.Screen name="Goal" component={AppGoal} />
+          <Stack.Screen name="Quiz" component={OpenBook} />
+          <Stack.Screen name="Choose" component={CatOrDog} />
+          <Stack.Screen name="CatQuiz" component={CatQuizScreen} />
+          <Stack.Screen name="DogQuiz" component={DogQuizScreen} />
+          <Stack.Screen name="Ready" component={SeeResults} />
+          <Stack.Screen name="Results" component={ResultsPage} />
+          <Stack.Screen name="Review" component={WrongAnswers} />
         </Stack.Navigator>
       </NavigationContainer>
     </View>
