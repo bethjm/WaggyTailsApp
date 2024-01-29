@@ -1,22 +1,28 @@
-**Project Title:** Pet Care Education App
+# WaggyQuiz
 
-**Click Link to visit the WaggyTail Quiz App**
-https://waggyadoptquiz.netlify.app/
+This application was developed for WaggyTail Rescue, a dog and cat rescue organization based in NYC. The app serves as an educational resource for prospective pet owners, offering quizzes to test their knowledge of responsible pet ownership. WaggyTails conducts over 20+ pet adoptions per month.
 
-**Summary:**
+While the app was developed with ReactNative, upon reflection it was decided that deploying it to the web would make it more easily accessible to perspective adopters.
 
-The Pet Care Education App is a versatile mobile application aimed at providing users with essential knowledge and guidance on responsible pet ownership and care for both dogs and cats. Developed using React Native, this educational app is designed to promote the well-being of pets and enhance the understanding of pet owners regarding their canine and feline companions.
+***Access***
 
-**Key Features:**
+- Access the web version: [WaggyQuiz](https://waggyadoptquiz.netlify.app/)
 
-- **Interactive Quizzes:** The app features interactive quizzes with multiple-choice questions covering various aspects of pet care, including both dogs and cats. Users can test their knowledge and learn valuable information about taking care of their pets.
+***Features***
 
-- **User-Friendly Interface:** With a user-friendly and intuitive interface, the app offers a seamless navigation experience, ensuring that users can easily access educational content and quizzes for both dogs and cats.
+- **Interactive Quizzes:** Potential adopters can choose between a cat quiz or a dog quiz. The app dynamically prompts users with new questions, providing an engaging learning experience.
 
-- **Android and iOS Compatibility:** The app has been thoroughly tested and optimized for both Android and iOS platforms, ensuring a polished user experience for dog and cat owners using devices such as Android phones and iPhones.
+- **Scoring System:** At the end of the quiz, users receive a score indicating the number of correct answers. They can then review the questions they answered incorrectly to enhance their understanding of responsible pet ownership.
+  
+- **API Integration:** The app has an integrated API for the questions for each quiz, ensuring a seamless and up-to-date experience for users.
 
-- **Global State Management:** The project utilizes Redux to efficiently manage application state and data flow, enhancing the overall responsiveness and functionality of the app for both pet categories.
+- **Platform Tech:** The app utilizes ReactNavigation for seamless data transfer between components. 
 
-- **Error Handling and Bug Fixing:** Robust error handling mechanisms have been implemented to ensure that the app runs smoothly, and bug fixes have been applied to enhance reliability for both dog and cat enthusiasts.
+- **Web Deployment:** To enhance accessibility for prospective adopters, the app has been deployed on the web. It is hosted on Netlify for cost-effectiveness and easy redeployment.
 
-The Pet Care Education App serves as a valuable resource for pet owners, whether they have dogs, cats, or both. It equips them with the knowledge and skills needed to provide the best care for their beloved pets, fostering responsible pet ownership and promoting the well-being of both dogs and cats.
+***Platform Optimization***
+
+- **Cross-Platform Design:** Originally intended for deployment on app stores (iOS and Android), the app's StyleSheet design is optimized for both mobile platforms and web.
+
+Feel free to explore the quizzes, enhance your pet ownership knowledge, and share the app with fellow prospective pet owners. Thank you for supporting responsible pet ownership!
+
